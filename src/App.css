@@ -2,19 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #262632;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +13,111 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#read-or-hide {
+  color:yellowgreen;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#read-or-hide:hover {
+  cursor: pointer;
+}
+
+#search-page {
+  display:flex;
+  position:static;
+  /* border:solid; */
+  /* border-color:red; */
+  width:100%;
+  height:100vh;
+  /* transform: translate(-50%, -50%); */
+  justify-content: center;
+  align-items: center;
+
+}
+
+#search-title {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#search-title:link {
+  color: greenyellow;
+}
+
+#search-title:visited {
+  color: greenyellow;
+}
+
+#search-content {
+  font-size:medium;
+}
+
+#search-results {
+  width: 70%;
+  color:aliceblue;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#smallbox-results {
+  /* border:solid;  */
+  border-bottom:solid; 
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#text-container {
+  /* border:solid; */
+  margin:1%;
+  margin-left: 0;
+  width: 100%;
+  flex:1;
+  padding: 15px;
+}
+
+#image-float {
+  /* border:solid; */
+  padding:15px; 
+  margin-right:0;
+}
+
+#search-form {
+  /* border:solid; */
+  justify-content: center;
+  align-items: center;
+  /* position: fixed; */
+  top:35%;
+  left:50%;
+  /* transform: translate(-50%, -50%); */
+  width: 80%;
+}
+
+#search-header {
+  /* border:solid; */
+  color:yellowgreen;
+  text-align: center;
+  width:100%;
+}
+
+#search-input {
+  height:35vh;
+  width:100%;
+  padding-top: 3%;
+  /* padding-left: 1px;
+  padding-right: 1px; */
+  padding-bottom: 3%;
+  /* border-radius: 1%; */
+  background-color:aliceblue;
+  justify-content: center;
+  text-align: center;
+  font-size: 150%;
+  overflow-y:scroll;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  outline: none;
+}
+
+#search-input::placeholder {
+  color: #606090;
+  opacity: 0.3;
 }
