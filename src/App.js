@@ -69,6 +69,7 @@ function App() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ query }),
+                mode: "no-cors"
             });
 
             if (!response.ok) {
