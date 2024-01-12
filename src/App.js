@@ -67,6 +67,7 @@ function App() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Accept':'application/json'
                 },
                 body: JSON.stringify({ query }),
                 mode: "no-cors"
