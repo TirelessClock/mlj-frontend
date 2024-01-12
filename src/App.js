@@ -63,7 +63,7 @@ function App() {
         setLoading(true);
 
         try {
-            const response = await fetch('https://mlj-backend.wl.r.appspot.com/', {
+            const response = await fetch('https://mlj-backend.wl.r.appspot.com/search', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
